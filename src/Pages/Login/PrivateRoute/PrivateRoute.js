@@ -1,0 +1,22 @@
+
+import React from 'react';
+import { Navigate } from 'react-router-dom'
+import useAuth from '../../../hooks/useAuth'
+
+const PrivateRoute = ({ children }) => {
+  const { user, isLoading } = useAuth();
+
+  if (isLoading) {
+    return (
+      <div class="flex items-center justify-center">
+        <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
+          <span class="visually-hidden"></span>
+        </div>
+      </div>
+    )
+  }
+
+  return user?.email ? children : <Navigate to="/login" />;
+};
+
+export default PrivateRoute;

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Train",
+        "img": "https://i.ibb.co/B6CcVLf/train.png",
+        "sits": 4,
+        "price": "67$"
+    },
+    {
+        "id": 2,
+        "name": "Car",
+        "img": "https://i.ibb.co/8rygzS5/car.png",
+        "sits": 4,
+        "price": "50$"
+    },
+    {
+        "id": 3,
+        "name": "Bike",
+        "img": "https://i.ibb.co/mFDPCP7/bike.png",
+        "sits": 2,
+        "price": "30$"
+    },
+    {
+        "id": 4,
+        "name": "Bus",
+        "img": "https://i.ibb.co/c2WPFGh/bus.png",
+        "sits": 6,
+        "price": "27$"
+    }
+]
